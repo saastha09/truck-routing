@@ -10,6 +10,11 @@ INTERVALS = (10, 25, 50)
 
 
 @require_GET
+def health(_request):
+    return JsonResponse({"ok": True})
+
+
+@require_GET
 def plan(request):
     q = request.GET
     try:

@@ -9,11 +9,13 @@ Coding assessment for Spotter. A truck driver types origin, destination, departu
 ## Links
 
 - GitHub: https://github.com/saastha09/truck-routing
-- Live app (frontend): _add after you deploy_
-- API (backend): _add after you deploy_
+- Live app: https://truck-routing-web.onrender.com
+- API: https://truck-routing-api.onrender.com
 - Loom: https://www.loom.com/share/1a4047b2e9884386be8c4889f19b2470
 
-The form wants the GitHub repo for “code”, and the **frontend** URL for “hosted version”.
+Spotter form: GitHub = repo, hosted version = the live app URL.
+
+First Render boot can take a couple of minutes. Free instances go to sleep; the first click after that is slow.
 
 ## Run locally
 
@@ -49,13 +51,6 @@ Open http://localhost:5173. Try Chicago, IL → Denver, CO.
 6. Pick a route: fewest No Travel miles, then Severe, then High, then lowest average risk, then shortest time. Average risk is mile-weighted (Low = 0 … No Travel = 4).
 7. The 48-hour heatmap rides along in the same JSON, so the slider doesn’t hit the network.
 
-## Deploy (when you have URLs)
+## Hosting
 
-Frontend build needs `VITE_API_URL` pointed at the live Django URL.
-
-Backend (gunicorn) needs:
-
-- `DEBUG=0`
-- `SECRET_KEY`
-- `ALLOWED_HOSTS` = your API hostname
-- `CORS_ORIGINS` = your frontend origin (https://…)
+`render.yaml` deploys the Django API and the Vite static site on Render’s free plan. GitHub cannot run Django; the live demo is on Render.
