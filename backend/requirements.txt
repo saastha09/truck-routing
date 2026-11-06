@@ -1,0 +1,6 @@
+Django>=4.2,<5
+django-cors-headers>=4.3
+requests>=2.31
+gunicorn>=21
+urllib3<2
+pyopenssl

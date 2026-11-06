@@ -1,0 +1,8 @@
+.venv/
+node_modules/
+dist/
+__pycache__/
+.env
+.env.local
+*.docx
+_make_walkthrough_docx.js
